@@ -1,0 +1,68 @@
+/* Container for the whole page */
+.mars-rover-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Dropdown for Rover selection */
+  select {
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  /* Loading indicator */
+  .loading {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  /* Container for photos */
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  /* Style for each image */
+  .photo-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .photo-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  

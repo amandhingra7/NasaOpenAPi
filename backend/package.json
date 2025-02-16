@@ -1,0 +1,29 @@
+{
+  "name": "nasaopenapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A NASA Open API project for fetching Mars Rover Photos and Astronomy Picture of the Day (APOD).",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "transform": {}
+  }
+}

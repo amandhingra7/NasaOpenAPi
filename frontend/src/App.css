@@ -1,0 +1,197 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9; /* Light background for a clean look */
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0066cc;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+.navbar h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ececec;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #0066cc;
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Content Sections */
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mars-rover-section, .apod-section {
+  flex: 1;
+  min-width: 45%;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Images */
+.mars-rover-section img,
+.apod-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Form Elements */
+select, input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Buttons */
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Rover Manifest Styling */
+.rover-manifest-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rover-manifest-container h2 {
+  text-align: center;
+  color: #0066cc;
+}
+
+.rover-manifest-list {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 5px solid #0066cc;
+}
+
+.rover-manifest-list p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.app-footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mars-rover-section, .apod-section {
+    min-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+    gap: 10px;
+  }
+}
