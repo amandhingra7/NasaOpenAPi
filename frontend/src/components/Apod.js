@@ -2,13 +2,19 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import App from '../App';
 
+
+
 const Apod = () => {
   const [apodData, setApodData] = useState(null);
 
   useEffect(() => {
     const fetchApod = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/apod');
+        const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+        console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
+        const response = await axios.get(`${API_BASE_URL}/apod`); // 
+        
+
         setApodData(response.data);
       } catch (error) {
         console.error('Error fetching APOD data:', error);

@@ -11,7 +11,9 @@ const MarsRoverPhotos = () => {
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/mars-rover-photos?rover=${rover}&camera=${camera}&sol=${sol}`);
+        const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000"; 
+        const response = await axios.get(`${API_BASE_URL}/mars-rover-photos?rover=${rover}&camera=${camera}&sol=${sol}`);
+        
         setPhotos(response.data.photos);
       } catch (error) {
         console.error('Error fetching Mars Rover photos:', error);
