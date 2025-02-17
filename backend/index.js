@@ -12,6 +12,12 @@ const NASA_API_KEY = process.env.NASA_API_KEY;
 
 app.use(cors());
 
+app.get("/", (req, res) => {
+    res.send("Welcome to the NASA Open API Backend!");
+});
+
+
+
 // APOD endpoint
 app.get('/apod', async (req, res) => {
     try {
